@@ -97,6 +97,8 @@ public class Main {
                 .stream()
                 .collect(Collectors.partitioningBy(aluno -> aluno.nota() > 5));
 
+        List<Aluno> alunos2 = aprovadosXReprovados.get(true);
+        List<Aluno> alunos12 = aprovadosXReprovados.get(false);
         List<Aluno> alunos = aprovadosXReprovados.get(true);
         List<Aluno> alunos1 = aprovadosXReprovados.get(false);
 
